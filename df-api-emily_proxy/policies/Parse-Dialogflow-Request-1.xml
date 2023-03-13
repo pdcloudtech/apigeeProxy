@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ParseDialogflowRequest continueOnError="false" enabled="true" name="Parse-Dialogflow-Request-1">
+  <DisplayName>Parse Dialogflow Request-1</DisplayName>
+  <VariablePrefix>df-pd-prefix</VariablePrefix>
+  <DialogflowVersion>CX</DialogflowVersion>
+</ParseDialogflowRequest>

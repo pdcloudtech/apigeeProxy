@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="9" name="df-api-emily">
+  <DisplayName/>
+  <Description/>
+  <CreatedAt>1678331941155</CreatedAt>
+  <LastModifiedAt>1678331941155</LastModifiedAt>
+  <BasePaths>/df-api-emily</BasePaths>
+  <Policies>
+    <Policy>Assign-Message-1</Policy>
+    <Policy>JavaScript-1</Policy>
+    <Policy>Parse-Dialogflow-Request-1</Policy>
+    <Policy>AM-remove-1</Policy>
+    <Policy>Assign-Message-2</Policy>
+    <Policy>Set-Dialogflow-Response-1</Policy>
+    <Policy>create-response</Policy>
+    <Policy>Extract-Variables-1</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <Resources>
+    <Resource>jsc://append-url.js</Resource>
+  </Resources>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

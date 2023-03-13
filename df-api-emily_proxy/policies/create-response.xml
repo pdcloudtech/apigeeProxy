@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="create-response">
+  <AssignVariable>
+    <Name>response-to-send</Name>
+    <Template>Hello {customer.fname}, your skill is {customer.skill}</Template>
+  </AssignVariable>
+</AssignMessage>

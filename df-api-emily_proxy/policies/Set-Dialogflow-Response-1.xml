@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetDialogflowResponse continueOnError="false" enabled="true" name="Set-Dialogflow-Response-1">
+  <DisplayName>Set Dialogflow Response-1</DisplayName>
+  <DialogflowVersion>CX</DialogflowVersion>
+  <Source>message</Source>
+  <NaturalLanguageResponse>
+    <MergeBehavior>APPEND</MergeBehavior>
+    <Phrases>
+      <Phrase>
+        <Ref>response-to-send</Ref>
+      </Phrase>
+      <!--<Phrase>
+      <Header name="X-Response-Body"/>
+    </Phrase>-->
+  </Phrases>
+</NaturalLanguageResponse>
+<Parameters>
+  <Parameter name="skill">
+    <JSONPath>$.skill</JSONPath>
+  </Parameter>
+  <!--<Parameter>
+  <Header name="skill"/>
+</Parameter>
+<Parameter>
+  <Ref>example-variable</Ref>
+</Parameter>
+<Parameter>
+  <Value>example</Value>
+</Parameter>-->
+</Parameters>
+</SetDialogflowResponse>

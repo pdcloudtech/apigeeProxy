@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="Extract-Variables-1">
+  <DisplayName>Extract Variables-1</DisplayName>
+  <Source>response</Source>
+  <VariablePrefix>customer</VariablePrefix>
+  <JSONPayload>
+    <Variable name="skill">
+      <JSONPath>$.skill</JSONPath>
+    </Variable>
+    <Variable name="fname">
+      <JSONPath>$.fname</JSONPath>
+    </Variable>
+  </JSONPayload>
+</ExtractVariables>

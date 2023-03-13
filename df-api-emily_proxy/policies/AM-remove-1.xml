@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage name="AM-remove-1">
+  <DisplayName>remove-1</DisplayName>
+  <Remove>
+    <Payload>true</Payload>
+  </Remove>
+  <!--<Add>
+  <Headers>
+    <Header name="accept">*/*</Header>
+    <Header name="accept-encoding">gzip,deflate,br</Header>
+  </Headers>
+</Add>-->
+<AssignTo>request</AssignTo>
+</AssignMessage>

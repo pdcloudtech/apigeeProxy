@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--<AssignMessage continueOnError="false" enabled="true" name="Assign-Message-2">
+<DisplayName>Assign Message-2</DisplayName>
+<Properties/>
+<AssignVariable>
+  <Name>target.verb</Name>
+  <Value>GET</Value>
+</AssignVariable>
+</AssignMessage>-->
+<AssignMessage name="Assign-Message-2">
+  <AssignVariable>
+    <Name>request.verb</Name>
+    <Value>GET</Value>
+    <Ref/>
+  </AssignVariable>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

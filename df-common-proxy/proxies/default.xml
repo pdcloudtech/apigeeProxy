@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>Parse-Dialogflow-Request</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="getUserInfo">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>change-verb-get</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>Set-Dialogflow-Response-user</Name>
+                </Step>
+            </Response>
+            <Condition>google.dialogflow.fulfillment.tag = "get-user-api"</Condition>
+        </Flow>
+        <Flow name="getJokeType">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>change-verb-get</Name>
+                </Step>
+            </Request>
+            <Response>
+                <Step>
+                    <Name>Set-Dialogflow-Response-joke</Name>
+                </Step>
+            </Response>
+            <Condition>google.dialogflow.fulfillment.tag = "joke-api"</Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/common-df</BasePath>
+    </HTTPProxyConnection>
+    <RouteRule name="UserRoute">
+        <Condition>google.dialogflow.fulfillment.tag = "get-user-api"</Condition>
+        <TargetEndpoint>GetUserEndpoint</TargetEndpoint>
+    </RouteRule>
+    <RouteRule name="UserRoute">
+        <Condition>google.dialogflow.fulfillment.tag = "joke-api"</Condition>
+        <TargetEndpoint>JokeTypeEndpoint</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

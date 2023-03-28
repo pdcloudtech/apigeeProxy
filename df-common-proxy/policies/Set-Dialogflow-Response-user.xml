@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetDialogflowResponse continueOnError="false" enabled="true" name="Set-Dialogflow-Response-user">
+    <DisplayName>Set Dialogflow Response-user</DisplayName>
+    <DialogflowVersion>CX</DialogflowVersion>
+    <Source>message</Source>
+    <Parameters>
+        <Parameter name="skill">
+            <JSONPath>$.skill</JSONPath>
+        </Parameter>
+        <Parameter name="name">
+            <JSONPath>$.fname</JSONPath>
+        </Parameter>
+    </Parameters>
+</SetDialogflowResponse>

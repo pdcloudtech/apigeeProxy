@@ -1,0 +1,16 @@
+<APIProxy revision="2" name="random-joke-type">
+    <DisplayName>random-joke-type</DisplayName>
+    <Description></Description>
+    <CreatedAt>1679592459736</CreatedAt>
+    <LastModifiedAt>1679592459736</LastModifiedAt>
+    <BasePaths>/random-joke-type</BasePaths>
+    <Policies>
+        <Policy>AM-query-params</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

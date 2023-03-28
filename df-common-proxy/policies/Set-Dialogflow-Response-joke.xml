@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SetDialogflowResponse continueOnError="false" enabled="true" name="Set-Dialogflow-Response-joke">
+    <DisplayName>Set Dialogflow Response-joke</DisplayName>
+    <DialogflowVersion>CX</DialogflowVersion>
+    <Source>message</Source>
+    <Parameters>
+        <Parameter name="joke">
+            <JSONPath>$.joke</JSONPath>
+        </Parameter>
+        <Parameter name="setup">
+            <JSONPath>$.setup</JSONPath>
+        </Parameter>
+        <Parameter name="delivery">
+            <JSONPath>$.delivery</JSONPath>
+        </Parameter>
+        <Parameter name="category">
+            <JSONPath>$.category</JSONPath>
+        </Parameter>
+        <Parameter name="type">
+            <JSONPath>$.type</JSONPath>
+        </Parameter>
+    </Parameters>
+</SetDialogflowResponse>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-from-request">
+    <DisplayName>EV-from-request</DisplayName>
+    <Source>request</Source>
+    <JSONPayload>
+        <Variable name="lang" type="string">
+            <JSONPath>$.languageCode</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <VariablePrefix>df-request</VariablePrefix>
+</ExtractVariables>

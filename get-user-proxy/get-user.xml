@@ -1,0 +1,13 @@
+<APIProxy revision="2" name="get-user">
+    <DisplayName>get-user</DisplayName>
+    <Description></Description>
+    <CreatedAt>1679344403183</CreatedAt>
+    <LastModifiedAt>1679345816799</LastModifiedAt>
+    <BasePaths>/get-user</BasePaths>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

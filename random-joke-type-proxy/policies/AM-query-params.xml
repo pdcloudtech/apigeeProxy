@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-query-params">
+    <DisplayName>AM-query-params</DisplayName>
+    <Add>
+        <QueryParams>
+            <!--<QueryParam name="type">single</QueryParam>-->
+            <QueryParam name="blacklistFlags">nsfw,religious,political,racist,sexist,explicit</QueryParam>
+        </QueryParams>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo>request</AssignTo>
+</AssignMessage>

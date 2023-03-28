@@ -1,0 +1,29 @@
+<APIProxy revision="30" name="common-df">
+    <DisplayName></DisplayName>
+    <Description>DF webhook proxy which uses proxy chaining to call APIs</Description>
+    <CreatedAt>1679944108194</CreatedAt>
+    <LastModifiedAt>1679944108194</LastModifiedAt>
+    <BasePaths>/common-df</BasePaths>
+    <Policies>
+        <Policy>Parse-Dialogflow-Request</Policy>
+        <Policy>change-verb-get</Policy>
+        <Policy>Set-Dialogflow-Response-joke</Policy>
+        <Policy>Set-Dialogflow-Response-user</Policy>
+        <Policy>append-url</Policy>
+        <Policy>remove-body</Policy>
+        <Policy>JS-apppend-joke-type</Policy>
+        <Policy>AM-queryparam</Policy>
+        <Policy>EV-from-request</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://append-url.js</Resource>
+        <Resource>jsc://append-url-joke.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>GetUserEndpoint</TargetEndpoint>
+        <TargetEndpoint>JokeTypeEndpoint</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

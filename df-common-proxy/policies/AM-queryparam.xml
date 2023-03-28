@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-queryparam">
+    <DisplayName>AM-queryparam</DisplayName>
+    <Add>
+        <QueryParams>
+            <QueryParam name="lang">{df-request.lang}</QueryParam>
+        </QueryParams>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo>request</AssignTo>
+</AssignMessage>
